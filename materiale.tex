@@ -1,0 +1,29 @@
+\documentclass[]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{citecolor=DarkScarlet}
+\hypersetup{linkcolor=DarkRed}
+\usepackage{amsmath}
+
+%opening
+\title{Problemi di Visciglia (Analisi 3)}
+\author{Bruno Bucciotti}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Talvolta i problemi di Visciglia della vecchi analisi 3 si possono fare in modi alternativi, che riducono anche la probabilità di fare errori di conto. Purtroppo non sono affatto sistematici, sono più "trucchetti da olimpiadi", quindi non vi esimono dall'imparare i metodi contosi. \href{https://www.youtube.com/watch?v=Fh-saZE73jM}{Together al pianoforte}
+\end{abstract}
+
+\subsection*{Ex 2 del 9 gennaio 2017}
+Invece di fare millemila moltiplicatori di lagrange dico che $f$ è massima per $x^2,y^2,z^2$ minimi, e dunque il punto di massimo è $(0,0,0)$ (dentro $A$); il massimo è dunque 3.
+Ora fisso $x,y,z$ qualsiasi e considero $a = \dfrac{1}{1+x^2}$, $b = \dfrac{1}{1+2y^2}$, $c = \dfrac{1}{1+3z^2}$; per la disuguaglianza fra media armonica e aritmetica ho che
+$$\left(\dfrac{\frac{1}{a}+\frac{1}{b}+\frac{1}{c}}{3}\right)^{-1} \leq \dfrac{a+b+c}{3}$$
+da cui
+$$i)\,\,\,\, f \geq \dfrac{9}{3 + x^2 + 2y^2 + 3z^2}$$
+imponendo il vincolo di restare in $A$ ho che, dentro $A$, $f\geq \frac{9}{4}$ dove l'uguaglianza si ha solo se $a=b=c$ (così c'è uguaglianza in $(i)$) e se $x^2 + 2y^2 + 3z^2=1$. Imponendo queste tre cose si trova $x^2=\frac{1}{3}$, $y^2=\frac{1}{6}$, $z^2=\frac{1}{9}$. Questo è il punto(i) di minimo in cui $f$ vale proprio $\frac{9}{4}$. La soluzione nel pdf ha una svista all'inizio di pagina 8 e conclude erroneamente che il minimo sia $\frac{1}{2}$.
+
+\end{document}
